@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .popup > div {
+        animation-name: popup-appear;
+        animation-fill-mode: forwards;
+        animation-duration: 2.3s;
+        animation-delay: 1s;
+    }
+
+    .popup > div > button {
+        animation-name: popup-button-appear;
+        animation-fill-mode: forwards;
+        animation-duration: 0.8s;
+        animation-delay: 3.3s;
+    }
+}
+
+@keyframes popup-appear {
+    from {
+        @apply drop-shadow-none bg-white;
+    }
+
+    to {
+        @apply drop-shadow-xl opacity-100 bg-white;
+    }
+}
+
+@keyframes popup-button-appear {
+    to {
+        @apply opacity-100;
+    }
+}

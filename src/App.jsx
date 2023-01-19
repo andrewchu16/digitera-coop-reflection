@@ -1,9 +1,9 @@
-import styles from "./styles/App.module.scss";
+import Popup from "./components/Popup";
 
 function App() {
     return (
-        <div className={styles.app}>
-            <h1>HI HELP</h1>
+        <div className="bg-red-500">
+            <Popup />
         </div>
     );
 }
