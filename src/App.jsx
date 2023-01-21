@@ -1,35 +1,38 @@
-import { useState, useMemo } from "react";
-import EmployabilitySkills from "./screens/EmployabilitySkills";
-import Home from "./screens/Home";
-import OverallExperience from "./screens/OverallExperience";
-import SoftwareSkills from "./screens/SoftwareSkills";
-import Welcome from "./screens/Welcome";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import EmployabilitySkills from "./pages/EmployabilitySkills";
+import Home from "./pages/Home";
+import Layout from "./pages/Layout";
+import NoPage from "./pages/NoPage";
+import OverallExperience from "./pages/OverallExperience";
+import SoftwareSkills from "./pages/SoftwareSkills";
+import Welcome from "./pages/Welcome";
 
 function App() {
-    const [curScreenName, setCurScreenName] = useState("Welcome");
-
-    // pls don't ask why i'm not using react router
-    const screens = useMemo(
-        () => ({
-            Welcome: <Welcome onClick={() => setCurScreenName("Home")} />,
-            Home: (
-                <Home
-                    switchTo={(nextScreenName) =>
-                        setCurScreenName(nextScreenName)
-                    }
-                />
-            ),
-            EmployabilitySkills: <EmployabilitySkills />,
-            SoftwareSkills: <SoftwareSkills />,
-            OverallExperience: <OverallExperience />,
-        }),
-        []
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="*" element={<NoPage />} />
+                <Route index element={<Welcome />} />
+                <Route path="/" element={<Layout />}>
+                    <Route path="/home" element={<Home />} />
+                    <Route
+                        path="/overall-experience"
+                        element={<OverallExperience />}
+                    />
+                    <Route
+                        path="software-skills"
+                        element={<SoftwareSkills />}
+                    />
+                    <Route
+                        path="/employability-skills"
+                        element={<EmployabilitySkills />}
+                    />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
-
-    let curScreen = screens[curScreenName];
-
-    return <div className="bg-red-500">{curScreen}</div>;
 }
 
 // employability skills, software skills, overall experience
+// how it started vs how it's going for each
 export default App;

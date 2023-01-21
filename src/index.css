@@ -1,16 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    .popup > div {
+    .popup {
         animation-name: popup-appear;
         animation-fill-mode: forwards;
         animation-duration: 2s;
         animation-delay: 0.4s;
     }
 
-    .popup > div > button {
+    .popup > button {
         animation-name: popup-button-appear;
         animation-fill-mode: forwards;
         animation-duration: 0.8s;
