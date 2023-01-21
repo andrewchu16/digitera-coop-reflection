@@ -2,8 +2,17 @@ import { NavLink } from "react-router-dom";
 import CurveBackground from "../components/CurveBackground";
 
 function Welcome() {
+    const handleKeyDown = (e) => {
+        console.log(e.key);
+        if (e.key === "enter") {
+        }
+    };
+
     return (
-        <div className="w-screen h-screen flex flex-col md:justify-end justify-center md:items-start items-center bg-gray-900 md:p-20 p-2">
+        <div
+            onKeyDown={handleKeyDown}
+            className="w-screen h-screen flex flex-col md:justify-end justify-center md:items-start items-center bg-gray-900 md:p-20 p-2"
+        >
             <div className="md:[display:initial] hidden">
                 <CurveBackground className="fill-sky-500" />
             </div>

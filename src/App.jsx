@@ -13,8 +13,8 @@ function App() {
             <Routes>
                 <Route path="*" element={<NoPage />} />
                 <Route index element={<Welcome />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/" element={<Layout />}>
-                    <Route path="/home" element={<Home />} />
                     <Route
                         path="/overall-experience"
                         element={<OverallExperience />}

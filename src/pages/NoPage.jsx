@@ -12,7 +12,7 @@ function NoPage() {
             </h1>
             <Link
                 className="text-gray-800 md:text-2xl text-xl py-3 px-5 bg-sky-500 hover:text-gray-200 transition-colors rounded-full"
-                to={"/"}
+                to={"/home"}
             >
                 Go Home
             </Link>
