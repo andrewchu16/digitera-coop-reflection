@@ -1,27 +1,27 @@
+import { Link } from "react-router-dom";
 import CurveBackground from "../components/CurveBackground";
 
-function LinkTile({ onClick, screen, text, imageUrl }) {
+function LinkTile({ screen, text }) {
     return (
-        <button
-            onClick={() => onClick(screen)}
-            className="bg-gray-700 text-4xl z-10 flex-grow rounded-lg"
+        <Link
+            to={screen}
+            className="bg-neutral-100 text-4xl z-10 flex justify-center items-center flex-grow rounded-lg hover:scale-95 hover:text-sky-600 transition-transform duration-150 drop-shadow-md"
         >
             {text}
-        </button>
+        </Link>
     );
 }
 
-function Home({ switchTo }) {
+function Home() {
     return (
-        <div className="bg-gray-900 w-screen h-screen flex justify-center items-stretch gap-8 p-20">
-            <CurveBackground className="fill-sky-500" />
+        <div className="bg-slate-200 w-screen h-screen flex md:flex-row flex-col justify-center items-stretch gap-8 md:p-20 p-8">
+            <CurveBackground className="fill-sky-600" />
             <LinkTile
-                onClick={switchTo}
-                screen="EmployabilitySkills"
-                text="A"
+                screen="/employability-skills"
+                text="Employability Skills"
             />
-            <LinkTile onClick={switchTo} screen="SoftwareSkills" text="B" />
-            <LinkTile onClick={switchTo} screen="OverallExperience" text="C" />
+            <LinkTile screen="/software-skills" text="Software Skills" />
+            <LinkTile screen="/overall-experience" text="Overall Experience" />
         </div>
     );
 }
