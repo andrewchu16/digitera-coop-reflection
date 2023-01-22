@@ -8,29 +8,23 @@ import SoftwareSkills from "./pages/SoftwareSkills";
 import Welcome from "./pages/Welcome";
 
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="*" element={<NoPage />} />
-                <Route index element={<Welcome />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/" element={<Layout />}>
-                    <Route
-                        path="/overall-experience"
-                        element={<OverallExperience />}
-                    />
-                    <Route
-                        path="software-skills"
-                        element={<SoftwareSkills />}
-                    />
-                    <Route
-                        path="/employability-skills"
-                        element={<EmployabilitySkills />}
-                    />
-                </Route>
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<NoPage />} />
+        <Route index element={<Welcome />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/overall-experience" element={<OverallExperience />} />
+          <Route path="software-skills" element={<SoftwareSkills />} />
+          <Route
+            path="/employability-skills"
+            element={<EmployabilitySkills />}
+          />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 // employability skills, software skills, overall experience

@@ -4,33 +4,33 @@
 @tailwind utilities;
 
 @layer components {
-    .popup {
-        animation-name: popup-appear;
-        animation-fill-mode: forwards;
-        animation-duration: 2s;
-        animation-delay: 0.4s;
-    }
+  .popup {
+    animation-name: popup-appear;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+  }
 
-    .popup > button {
-        animation-name: popup-button-appear;
-        animation-fill-mode: forwards;
-        animation-duration: 0.8s;
-        animation-delay: 2s;
-    }
+  .popup > button {
+    animation-name: popup-button-appear;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+    animation-delay: 2s;
+  }
 }
 
 @keyframes popup-appear {
-    from {
-        @apply drop-shadow-none bg-white;
-    }
+  from {
+    @apply drop-shadow-none bg-white;
+  }
 
-    to {
-        @apply drop-shadow-xl opacity-100 bg-white;
-    }
+  to {
+    @apply drop-shadow-xl opacity-100 bg-white;
+  }
 }
 
 @keyframes popup-button-appear {
-    to {
-        @apply opacity-100;
-    }
+  to {
+    @apply opacity-100;
+  }
 }
