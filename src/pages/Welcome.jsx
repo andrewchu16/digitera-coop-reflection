@@ -30,6 +30,12 @@ function Welcome() {
           ENTER
         </NavLink>
       </div>
+      <NavLink
+        className="absolute bottom-10 md:right-10 hover:text-sky-600 text-lg"
+        to="/credits"
+      >
+        Credits
+      </NavLink>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Credits from "./pages/Credits";
 import EmployabilitySkills from "./pages/EmployabilitySkills";
 import Home from "./pages/Home";
 import Layout from "./pages/Layout";
@@ -14,6 +15,7 @@ function App() {
         <Route path="*" element={<NoPage />} />
         <Route index element={<Welcome />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/credits" element={<Credits />} />
         <Route path="/" element={<Layout />}>
           <Route path="/overall-experience" element={<OverallExperience />} />
           <Route path="software-skills" element={<SoftwareSkills />} />
