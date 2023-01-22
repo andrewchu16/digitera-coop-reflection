@@ -1,6 +1,6 @@
 function CurveBackground({ className = "fill-blue-400" }) {
     return (
-        <div className="absolute top-0 left-0 w-full overflow-hidden [line-height:0] motion-safe:animate-slide-down">
+        <div className="absolute top-0 left-0 w-full z-0 overflow-hidden [line-height:0] motion-safe:animate-slide-down">
             <svg
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
