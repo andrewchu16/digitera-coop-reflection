@@ -5,8 +5,8 @@ function Navbar() {
   const activeClassList = "underline";
 
   return (
-    <div className="h-28 bg-slate-200 flex justify-between px-20 py-4">
-      <NavLink className="flex items-center gap-2" to="/home">
+    <div className="md:h-28 h-20 bg-slate-200 flex justify-between md:px-20 py-4 md:static fixed">
+      <NavLink className="md:flex hidden items-center gap-2" to="/home">
         <img
           src={logo}
           className="h-full rounded-full bg-neutral-100 p-3 border-zinc-900 border-[1px] hover:brightness-95 transition-[filter]"
@@ -18,7 +18,7 @@ function Navbar() {
       <div className="h-full flex gap-8 justify-around items-center text-lg">
         <NavLink
           className={({ isActive }) =>
-            "hover:text-sky-500 hover:scale-105 transition-transform " +
+            "md:hover:text-sky-500 hover:scale-105 text-center " +
             (isActive ? activeClassList : "")
           }
           to="/employability-skills"
@@ -27,7 +27,7 @@ function Navbar() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            "hover:text-sky-500 hover:scale-105 transition-transform " +
+            "md:hover:text-sky-500 hover:scale-105 text-center " +
             (isActive ? activeClassList : "")
           }
           to="/software-skills"
@@ -36,7 +36,7 @@ function Navbar() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            "hover:text-sky-500 hover:scale-105 transition-transform " +
+            "md:hover:text-sky-500 hover:scale-105 text-center " +
             (isActive ? activeClassList : "")
           }
           to="/overall-experience"
