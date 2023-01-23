@@ -10,7 +10,7 @@ function Navbar() {
       <NavLink className="md:flex hidden items-center gap-2 select-none" to="/">
         <img
           src={logo}
-          className="h-[87%] rounded-full bg-neutral-100 p-3 border-zinc-900 border-[1px] hover:brightness-95 transition-[filter]"
+          className="h-[87%] rounded-lg bg-neutral-100 p-3 border-zinc-900 border-[1px] hover:brightness-95 transition-[filter]"
         />
         <h1 className="text-4xl font-display hover:underline">
           Digitera Co-op Reflection
