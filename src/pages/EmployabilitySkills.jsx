@@ -1,19 +1,8 @@
-import TwoToggle from "../components/TwoToggle";
+import { BeforeAfterToggle } from "../components/TwoToggle";
 import independentWork from "../assets/independent-work.svg";
 import timeManagement from "../assets/time-management.svg";
 import problemSolving from "../assets/lightbulb.svg";
 import communication from "../assets/communication.svg";
-
-function BeforeAfterToggle({ beforeText, afterText }) {
-  return (
-    <TwoToggle
-      title1="How it started"
-      title2="How it's going"
-      child1={beforeText}
-      child2={afterText}
-    />
-  );
-}
 
 function EmployabilitySkills() {
   return (
@@ -25,7 +14,11 @@ function EmployabilitySkills() {
         I have changed throughout the semester.
       </p>
       <h2 className="md:text-3xl my-4">Independent Work</h2>
-      <img src={independentWork} className="m-auto md:w-1/3 w-full" lazy />
+      <img
+        src={independentWork}
+        className="m-auto md:w-1/3 w-full"
+        lazy="true"
+      />
       <BeforeAfterToggle
         beforeText={
           <>
@@ -67,7 +60,11 @@ function EmployabilitySkills() {
         }
       />
       <h2 className="md:text-3xl my-8 mb-4">Time Management</h2>
-      <img src={timeManagement} className="m-auto md:w-1/3 w-full" lazy />
+      <img
+        src={timeManagement}
+        className="m-auto md:w-1/3 w-full"
+        lazy="true"
+      />
       <BeforeAfterToggle
         beforeText={
           <>
@@ -120,7 +117,11 @@ function EmployabilitySkills() {
         }
       />
       <h2 className="md:text-3xl my-8 mb-4">Problem-Solving</h2>
-      <img src={problemSolving} className="m-auto md:w-1/3 w-full" lazy />
+      <img
+        src={problemSolving}
+        className="m-auto md:w-1/3 w-full"
+        lazy="true"
+      />
       <BeforeAfterToggle
         beforeText={
           <>
@@ -146,7 +147,7 @@ function EmployabilitySkills() {
         }
       />
       <h2 className="md:text-3xl my-8 mb-4">Communication</h2>
-      <img src={communication} className="m-auto md:w-1/3 w-full" lazy />
+      <img src={communication} className="m-auto md:w-1/3 w-full" lazy="true" />
       <BeforeAfterToggle
         beforeText={
           <>
