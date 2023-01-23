@@ -2,10 +2,11 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/computer.png";
 
 function Navbar() {
-  const activeClassList = "underline";
+  const activeClassList =
+    "underline md:bg-transparent bg-neutral-100 rounded-full md:p-0 p-2";
 
   return (
-    <div className="md:h-28 h-20 bg-slate-200 flex justify-between md:px-20 py-4 md:static fixed">
+    <div className="md:h-28 h-20 bg-slate-200 flex justify-between md:px-20 py-42">
       <NavLink className="md:flex hidden items-center gap-2" to="/home">
         <img
           src={logo}

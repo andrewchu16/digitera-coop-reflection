@@ -4,8 +4,12 @@ import Navbar from "../components/Navbar";
 function Layout() {
   return (
     <div className="flex flex-col h-screen w-screen">
-      <Navbar />
-      <Outlet />
+      <div className="md:static fixed z-50">
+        <Navbar />
+      </div>
+      <div className="md:static absolute top-20 w-full">
+        <Outlet />
+      </div>
     </div>
   );
 }
