@@ -1,16 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-function FreepikImageSource({ href, author }) {
-  return (
-    <li>
-      Image by{" "}
-      <a href={href} className="text-sky-600 hover:underline" target="_blank">
-        {author}
-      </a>{" "}
-      on Freepik
-    </li>
-  );
-}
 function Credits() {
   return (
     <div className="h-screen w-screen flex flex-col justify-center items-center bg-slate-300 md:px-96 md:py-48">
@@ -20,8 +9,18 @@ function Credits() {
       >
         Back
       </NavLink>
-      <div className="bg-neutral-100 w-full h-full flex flex-col items-center gap-4 p-8 rounded-lg">
+      <div className="bg-neutral-100 w-full h-full flex flex-col items-center gap-3 p-8 rounded-lg">
         <h1 className="md:text-3xl text-2xl">Credits</h1>
+        <h2 className="md:text-xl text-lg mb-4">
+          Website made by{" "}
+          <a
+            href="https://github.com/andrewchu16"
+            target="_blank"
+            className="text-sky-600 hover:underline"
+          >
+            Andrew Chu
+          </a>
+        </h2>
         <ul className="list-disc md:text-xl text-lg">
           <li>
             Image by{" "}
@@ -50,6 +49,16 @@ function Credits() {
               href="https://storyset.com/people"
             >
               People illustrations by Storyset
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              className="text-sky-600 hover:underline"
+              href="https://www.flaticon.com/free-icons/coding"
+              title="coding icons"
+            >
+              Coding icons created by juicy_fish - Flaticon
             </a>
           </li>
         </ul>
