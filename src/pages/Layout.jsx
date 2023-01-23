@@ -3,11 +3,11 @@ import Navbar from "../components/Navbar";
 
 function Layout() {
   return (
-    <div className="flex flex-col h-screen w-screen">
+    <div className="flex flex-col w-full">
       <div className="md:static fixed z-50">
         <Navbar />
       </div>
-      <div className="md:static absolute top-20 w-full md:px-56 px-2">
+      <div className="md:static absolute top-20 w-full md:px-64 px-2">
         <Outlet />
       </div>
     </div>
