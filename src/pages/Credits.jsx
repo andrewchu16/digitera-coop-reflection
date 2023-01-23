@@ -11,7 +11,7 @@ function Credits() {
       </NavLink>
       <div className="bg-neutral-100 w-full h-full flex flex-col items-center gap-3 p-8 rounded-lg">
         <h1 className="md:text-3xl text-2xl">Credits</h1>
-        <h2 className="md:text-xl text-lg mb-1">
+        <h2 className="md:text-xl text-lg">
           Website made by{" "}
           <a
             href="https://github.com/andrewchu16"
@@ -21,7 +21,7 @@ function Credits() {
             Andrew Chu
           </a>
         </h2>
-        <ul className="list-disc md:text-lg text-md">
+        <ul className="list-disc text-md">
           <li>
             Image by{" "}
             <a
@@ -77,6 +77,24 @@ function Credits() {
               href="https://storyset.com/online"
             >
               Online illustrations by Storyset
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              className="text-sky-600 hover:underline"
+              href="https://storyset.com/internet"
+            >
+              Internet illustrations by Storyset
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              className="text-sky-600 hover:underline"
+              href="https://storyset.com/information"
+            >
+              Information illustrations by Storyset
             </a>
           </li>
         </ul>

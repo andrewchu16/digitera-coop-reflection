@@ -13,7 +13,7 @@ function EmployabilitySkills() {
         a person and improve my employability skills. These are some of the ways
         I have changed throughout the semester.
       </p>
-      <h2 className="md:text-3xl my-4">Independent Work</h2>
+      <h2 className="md:text-3xl text-xl my-4">Independent Work</h2>
       <img
         src={independentWork}
         className="m-auto md:w-1/3 w-full"
@@ -59,7 +59,7 @@ function EmployabilitySkills() {
           </>
         }
       />
-      <h2 className="md:text-3xl my-8 mb-4">Time Management</h2>
+      <h2 className="md:text-3xl text-xl my-8 mb-4">Time Management</h2>
       <img
         src={timeManagement}
         className="m-auto md:w-1/3 w-full"
@@ -116,7 +116,7 @@ function EmployabilitySkills() {
           </>
         }
       />
-      <h2 className="md:text-3xl my-8 mb-4">Problem-Solving</h2>
+      <h2 className="md:text-3xl text-xl my-8 mb-4">Problem-Solving</h2>
       <img
         src={problemSolving}
         className="m-auto md:w-1/3 w-full"
@@ -146,7 +146,7 @@ function EmployabilitySkills() {
           </>
         }
       />
-      <h2 className="md:text-3xl my-8 mb-4">Communication</h2>
+      <h2 className="md:text-3xl text-xl my-8 mb-4">Communication</h2>
       <img src={communication} className="m-auto md:w-1/3 w-full" lazy="true" />
       <BeforeAfterToggle
         beforeText={

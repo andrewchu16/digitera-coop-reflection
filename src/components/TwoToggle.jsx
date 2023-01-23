@@ -4,7 +4,7 @@ function TwoToggle({ title1, child1, title2, child2 }) {
   const [isOpenLeft, setIsOpenLeft] = useState(true);
 
   return (
-    <div className="flex bg-slate-500 flex-col p-4 rounded-lg">
+    <div className="flex flex-col rounded-lg">
       <div className="text-xl flex">
         <button
           className={
@@ -41,14 +41,13 @@ function TwoToggle({ title1, child1, title2, child2 }) {
 function BeforeAfterToggle({ beforeText, afterText }) {
   return (
     <TwoToggle
-      title1="How it started"
-      title2="How it's going"
+      title1="Before"
+      title2="After"
       child1={beforeText}
       child2={afterText}
     />
   );
 }
 
-export { BeforeAfterToggle };
-
 export default TwoToggle;
+export { BeforeAfterToggle };
