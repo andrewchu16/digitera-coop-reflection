@@ -7,10 +7,10 @@ function Navbar() {
 
   return (
     <div className="md:h-28 h-20 bg-slate-200 flex justify-between md:px-20 py-42">
-      <NavLink className="md:flex hidden items-center gap-2" to="/home">
+      <NavLink className="md:flex hidden items-center gap-2 select-none" to="/">
         <img
           src={logo}
-          className="h-full rounded-full bg-neutral-100 p-3 border-zinc-900 border-[1px] hover:brightness-95 transition-[filter]"
+          className="h-[87%] rounded-full bg-neutral-100 p-3 border-zinc-900 border-[1px] hover:brightness-95 transition-[filter]"
         />
         <h1 className="text-4xl font-display hover:underline">
           Digitera Co-op Reflection
