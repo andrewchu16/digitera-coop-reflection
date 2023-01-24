@@ -7,7 +7,7 @@ function Layout() {
       <div className="md:static fixed z-50">
         <Navbar />
       </div>
-      <div className="md:static absolute top-20 w-full md:px-64 px-2">
+      <div className="md:static absolute top-20 w-full md:px-72 px-2">
         <Outlet />
       </div>
     </div>

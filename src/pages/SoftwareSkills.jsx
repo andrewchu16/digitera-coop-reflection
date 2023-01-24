@@ -130,11 +130,3 @@ function SoftwareSkills() {
 }
 
 export default SoftwareSkills;
-/*
-developing websites
-- making several websites
-- attending hackathons
-pitching app
-- pitched to principal
-- never experienced how he would do it
-*/
